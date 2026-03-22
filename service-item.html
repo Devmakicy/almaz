@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуга — Алмазный мир</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/clog/mglog.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <picture class="logo__picture">
+                    <source srcset="assets/clog/mglog.svg" media="(max-width: 767px)">
+                    <img src="assets/clog/glog.svg" alt="Алмазный мир" class="logo__img">
+                </picture>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <div class="nav__item nav__item--services">
+                    <button class="nav__link nav__link--services" type="button">Услуги<span class="nav__arrow"></span></button>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown__col nav-dropdown__col--open">
+                            <button class="nav-dropdown__title" type="button">Государственный контроль</button>
+                            <div class="nav-dropdown__list">
+                                <a href="service-item.html?id=control-sampling">Пробоотбор и пробоподготовка</a>
+                                <a href="service-hallmark.html">Организация клеймения</a>
+                                <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                                <a href="service-item.html?id=control-labs">МУ ФПП лабораторных исследований</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__col">
+                            <button class="nav-dropdown__title" type="button">B2B</button>
+                            <div class="nav-dropdown__list">
+                                <a href="service-fulfillment.html">Фулфилмент</a>
+                                <a href="service-logistics.html">Логистика</a>
+                                <a href="service-customs.html">Таможенное оформление</a>
+                                <a href="service-storage.html">Хранение</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__col">
+                            <button class="nav-dropdown__title" type="button">Производство</button>
+                            <div class="nav-dropdown__list">
+                                <a href="service-item.html?id=production-custom">Изготовление на заказ</a>
+                                <a href="service-item.html?id=production-rent">Аренда помещений</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__col">
+                            <button class="nav-dropdown__title" type="button">Торговое решение</button>
+                            <div class="nav-dropdown__list">
+                                <a href="service-market.html">Торговая площадка</a>
+                                <a href="service-expo.html">Выставочные пространства</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="news.html">Новости</a>
+                <a href="feedback.html">Связаться</a>
+            </nav>
+
+            <a href="feedback.html" class="btn header__btn">Связаться с нами</a>
+            <a href="tel:+74957756271" class="header__phone">+7 (495) 775-62-71</a>
+
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <button class="mobile-menu__services-toggle" type="button">Услуги</button>
+                <div class="mobile-menu__services-list">
+                    <a href="service-item.html?id=control-sampling">Пробоотбор и пробоподготовка</a>
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-item.html?id=control-gemology">Геммологическая экспертиза</a>
+                    <a href="service-item.html?id=control-labs">МУ ФПП лабораторных исследований</a>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                    <a href="service-item.html?id=production-custom">Изготовление на заказ</a>
+                    <a href="service-item.html?id=production-rent">Аренда помещений</a>
+                    <a href="service-item.html?id=trade-market">Торговая площадка</a>
+                    <a href="service-item.html?id=trade-expo">Выставочные пространства</a>
+                </div>
+                <a href="news.html">Новости</a>
+                <a href="feedback.html">Связаться</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page" data-service-item>
+        <section class="section__inner" style="padding: 80px 24px;">
+            <a href="services.html" style="color: var(--text-muted); margin-bottom: 24px; display: inline-block;">← Ко всем услугам</a>
+            <h1 class="section__title" id="service-title">Услуга</h1>
+
+            <div class="service-item reveal" style="margin-top: 32px;">
+                <div class="service-item__media" aria-hidden="true">
+                    <img id="service-icon" alt="">
+                </div>
+                <div class="service-item__body">
+                    <p class="page__text" id="service-desc" style="margin-top: 0;">Описание будет добавлено позже.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="assets/clog/dglog.svg" alt="Алмазный мир" class="logo__img">
+                </a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-nav.svg" alt="" class="footer__icon">Навигация</div>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О компании</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-b2b.svg" alt="" class="footer__icon">B2B</div>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-production.svg" alt="" class="footer__icon">Производство</div>
+                    <a href="service-item.html?id=production-custom">Изготовление на заказ</a>
+                    <a href="service-item.html?id=production-rent">Аренда</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-control.svg" alt="" class="footer__icon">Государственный контроль</div>
+                    <a href="service-item.html?id=control-sampling">Пробоотбор и пробоподготовка</a>
+                    <a href="service-item.html?id=control-hallmark">Организация клеймения</a>
+                    <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                    <a href="service-item.html?id=control-labs">МУ ФПП лабораторных исследований</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-market.svg" alt="" class="footer__icon">Торговая площадка</div>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-contacts.svg" alt="" class="footer__icon">Контакты</div>
+                    <a href="tel:+74959091261">+7 (495) 909-12-61</a>
+                    <a href="mailto:info@almaznymir.ru">info@almaznymir.ru</a>
+                    <a href="mailto:office@almazmir.ru">office@almazmir.ru</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-location.svg" alt="" class="footer__icon">Адрес</div>
+                    <address data-copy-text="125493, Россия, Москва, ул. Смольная, д. 12">125493, Россия, Москва,<br>ул. Смольная, д. 12</address>
+                </div>
+                <div class="footer__col footer__col-cta">
+                    <div class="footer__col-title">Будем рады работать с вами!</div>
+                    <a href="feedback.html" class="footer__cta-btn">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© МПО «КРИСТАЛЛ», 1970-1990</span>
+                <span>© АО «АЛМАЗНЫЙ МИР», 1990-2025</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фулфилмент — Алмазный мир</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/clog/mglog.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- можно потом унифицировать через include, сейчас копия шапки с index -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <picture class="logo__picture">
+                    <source srcset="assets/clog/mglog.svg" media="(max-width: 1023px)">
+                    <img src="assets/clog/glog.svg" alt="Алмазный мир" class="logo__img">
+                </picture>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <div class="nav__item nav__item--services">
+                    <button class="nav__link nav__link--services" type="button">Услуги<span class="nav__arrow"></span></button>
+                    <div class="nav-dropdown nav-dropdown--accordion">
+                        <div class="nav-dropdown__item nav-dropdown__item--open">
+                            <button class="nav-dropdown__cat is-active" type="button" data-cat="control">Государственный контроль</button>
+                            <div class="nav-dropdown__panel" data-panel="control">
+                                <a href="service-hallmark.html">Организация клеймения</a>
+                                <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                                <a href="service-operator.html">Уполномоченный оператор</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="b2b">B2B</button>
+                            <div class="nav-dropdown__panel" data-panel="b2b">
+                                <a href="service-fulfillment.html">Фулфилмент</a>
+                                <a href="service-logistics.html">Логистика</a>
+                                <a href="service-customs.html">Таможенное оформление</a>
+                                <a href="service-storage.html">Хранение</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="production">Производство</button>
+                            <div class="nav-dropdown__panel" data-panel="production">
+                                <a href="service-jewelry.html">Изготовление на заказ</a>
+                                <a href="service-rent.html">Аренда помещений</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="trade">Торговое решение</button>
+                            <div class="nav-dropdown__panel" data-panel="trade">
+                                <a href="service-market.html">Торговая площадка</a>
+                                <a href="service-expo.html">Выставочные пространства</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="news.html">Новости</a>
+            </nav>
+            <a href="tel:+74957756271" class="header__phone">+7 (495) 775-62-71</a>
+            <a href="feedback.html" class="btn btn--header">Связаться с нами</a>
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <button class="mobile-menu__services-toggle" type="button">Услуги</button>
+                <div class="mobile-menu__services-list">
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Геммологическая экспертиза</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                    <a href="service-jewelry.html">Изготовление на заказ</a>
+                    <a href="service-rent.html">Аренда помещений</a>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <a href="news.html">Новости</a>
+                <a href="feedback.html">Связаться с нами</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page page--b2b page--fulfillment">
+        <section class="section__inner" style="padding: 80px 24px 56px;">
+            <div class="service-item">
+                <div class="service-item__body">
+                    <h1 class="section__title" style="margin-bottom: 12px;">Фулфилмент</h1>
+                    <p class="page__text" style="max-width: 720px;">
+                        <b>Фулфилмент - полный цикл работы с драгоценными металлами, камнями и ювелирными изделиями.</b><br><br> 
+                        АО «Алмазный Мир» предоставляет приём, обработку, хранение, подготовку к отгрузке, таможенное оформление и доставку ценностей по России и за рубеж
+                    </p>
+                </div>
+                <div class="service-item__media" aria-hidden="true">
+                    <img src="assets/image/img13.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section__inner reveal" style="padding: 0 24px 80px;">
+            <h2 class="section__title" style="font-size: 28px; margin-bottom: 24px;">Выполняемые работы</h2>
+            <div class="services-group__grid">
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img1.svg" alt=""></div>
+                    <h3 class="service-card__title">Безопасное хранение</h3>
+                    <p class="service-card__desc">Размещение ценностей в специализированных помещениях с круглосуточной охраной и контролем доступа.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img7.svg" alt=""></div>
+                    <h3 class="service-card__title">Кросс‑докинг</h3>
+                    <p class="service-card__desc">Контроль и приём упакованных ценностей, проверка документов и формирование отправок.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img17.svg" alt=""></div>
+                    <h3 class="service-card__title">Логистика и доставка</h3>
+                    <p class="service-card__desc">Доставка по России и за рубеж специализированным транспортом с соблюдением мер безопасности.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img10.svg" alt=""></div>
+                    <h3 class="service-card__title">Подготовка к отгрузке</h3>
+                    <p class="service-card__desc">Сортировка, комплектация и упаковка заказов в соответствии с требованиями площадок и клиентов.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img21.svg" alt=""></div>
+                    <h3 class="service-card__title">Сортировка и обработка</h3>
+                    <p class="service-card__desc">Сканирование, маркировка и подготовка ценностей к дальнейшим операциям.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__media"><img src="assets/image/img22.svg" alt=""></div>
+                    <h3 class="service-card__title">Экспортно‑импортные операции</h3>
+                    <p class="service-card__desc">Сопровождение экспортно‑импортных операций, включая таможенное оформление.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px;">
+                <h3 class="storage-terms__title" style="margin-bottom: 16px;">Условия и тарифы</h3>
+                <div class="b2b-links">
+                    <a href="assets/files/Хранение_Ценностей.pdf" class="b2b-links__btn" download>
+                        <span>Хранение ценностей</span>
+                        <img src="assets/icons/dl-arrow.svg" alt="" class="b2b-links__icon">
+                    </a>
+                    <a href="assets/files/Транспортировка.pdf" class="b2b-links__btn" download>
+                        <span>Транспортировка</span>
+                        <img src="assets/icons/dl-arrow.svg" alt="" class="b2b-links__icon">
+                    </a>
+                    <a href="assets/files/Таможенное_Оформление.pdf" class="b2b-links__btn" download>
+                        <span>Таможенное оформление</span>
+                        <img src="assets/icons/dl-arrow.svg" alt="" class="b2b-links__icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- футер берём такой же, как на других страницах -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="assets/clog/dglog.svg" alt="Алмазный мир" class="logo__img">
+                </a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-nav.svg" alt="" class="footer__icon">Навигация</div>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О компании</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-b2b.svg" alt="" class="footer__icon">B2B</div>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-production.svg" alt="" class="footer__icon">Производство</div>
+                    <a href="service-jewelry.html">Изготовление ювелирных изделий на заказ</a>
+                    <a href="service-rent.html">Аренда</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-control.svg" alt="" class="footer__icon">Государственный контроль</div>
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-market.svg" alt="" class="footer__icon">Торговая площадка</div>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-contacts.svg" alt="" class="footer__icon">Контакты</div>
+                    <a href="tel:+74959091261">+7 (495) 909-12-61</a>
+                    <a href="mailto:info@almaznymir.ru">info@almaznymir.ru</a>
+                    <a href="mailto:office@almazmir.ru">office@almazmir.ru</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-location.svg" alt="" class="footer__icon">Адрес</div>
+                    <address data-copy-text="125493, Россия, Москва, ул. Смольная, д. 12">125493, Россия, Москва,<br>ул. Смольная, д. 12</address>
+                </div>
+                <div class="footer__col footer__col-cta">
+                    <div class="footer__col-title">Будем рады работать с вами!</div>
+                    <a href="feedback.html" class="footer__cta-btn">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© МПО «КРИСТАЛЛ», 1970-1990</span>
+                <span>© АО «АЛМАЗНЫЙ МИР», 1990-2025</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

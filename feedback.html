@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами — Алмазный мир</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/clog/mglog.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <picture class="logo__picture">
+                    <source srcset="assets/clog/mglog.svg" media="(max-width: 1023px)">
+                    <img src="assets/clog/glog.svg" alt="Алмазный мир" class="logo__img">
+                </picture>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <div class="nav__item nav__item--services">
+                    <button class="nav__link nav__link--services" type="button">Услуги<span class="nav__arrow"></span></button>
+                    <div class="nav-dropdown nav-dropdown--accordion">
+                        <div class="nav-dropdown__item nav-dropdown__item--open">
+                            <button class="nav-dropdown__cat is-active" type="button" data-cat="control">Государственный контроль</button>
+                            <div class="nav-dropdown__panel" data-panel="control">
+                                <a href="service-hallmark.html">Организация клеймения</a>
+                                <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                                <a href="service-operator.html">Уполномоченный оператор</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="b2b">B2B</button>
+                            <div class="nav-dropdown__panel" data-panel="b2b">
+                                <a href="service-fulfillment.html">Фулфилмент</a>
+                                <a href="service-logistics.html">Логистика</a>
+                                <a href="service-customs.html">Таможенное оформление</a>
+                                <a href="service-storage.html">Хранение</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="production">Производство</button>
+                            <div class="nav-dropdown__panel" data-panel="production">
+                                <a href="service-jewelry.html">Изготовление на заказ</a>
+                                <a href="service-rent.html">Аренда помещений</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="trade">Торговое решение</button>
+                            <div class="nav-dropdown__panel" data-panel="trade">
+                                <a href="service-market.html">Торговая площадка</a>
+                                <a href="service-expo.html">Выставочные пространства</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="news.html">Новости</a>
+            </nav>
+            <a href="tel:+74957756271" class="header__phone">+7 (495) 775-62-71</a>
+            <a href="feedback.html" class="btn btn--header">Связаться с нами</a>
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <button class="mobile-menu__services-toggle" type="button">Услуги</button>
+                <div class="mobile-menu__services-list">
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Геммологическая экспертиза</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                    <a href="service-jewelry.html">Изготовление на заказ</a>
+                    <a href="service-rent.html">Аренда помещений</a>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <a href="news.html">Новости</a>
+                <a href="feedback.html">Связаться с нами</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page contact">
+        <section class="section__inner contact-section contact-section--centered" style="padding: 80px 24px;">
+            <h1 class="section__title">Связаться с нами</h1>
+            <p class="page__text contact-section__intro">По вопросам сотрудничества обращайтесь по телефону <a href="tel:+74957756251" style="color:#5b6fff;">+7 (495) 775-62-51</a> или заполните форму ниже</p>
+
+            <div class="contact-grid">
+                <div class="contact-box" aria-label="Контакты">
+                    <div class="contact-box__rows">
+                        <div class="contact-box__row">
+                            <div class="contact-box__icon-row">
+                                <img src="assets/icons/phone.svg" alt="">
+                            </div>
+                            <div class="contact-box__content">
+                                <div class="contact-box__label">Телефон</div>
+                                <div class="contact-box__value">
+                                    <a href="tel:+74957756271">+7 (495) 775-62-71</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-box__row">
+                            <div class="contact-box__icon-row">
+                                <img src="assets/icons/pin.svg" alt="">
+                            </div>
+                            <div class="contact-box__content">
+                                <div class="contact-box__label">Адрес</div>
+                                <div class="contact-box__value" data-copy-text="125493, Россия, Москва, ул. Смольная, д. 12">
+                                    125493, Россия, Москва, ул. Смольная, д. 12
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-box__row contact-box__row--two">
+                            <div class="contact-box__item">
+                                <div class="contact-box__icon-row">
+                                    <img src="assets/icons/mail.svg" alt="">
+                                </div>
+                                <div class="contact-box__content">
+                                    <div class="contact-box__label">E-mail</div>
+                                    <div class="contact-box__value">
+                                        <a href="mailto:info@almaznymir.ru">info@almaznymir.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-box__item">
+                                <div class="contact-box__icon-row">
+                                    <img src="assets/icons/mail.svg" alt="">
+                                </div>
+                                <div class="contact-box__content">
+                                    <div class="contact-box__label">E-mail</div>
+                                    <div class="contact-box__value">
+                                        <a href="mailto:office@almazmir.ru">office@almazmir.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-contact-form>
+                    <label class="field">
+                        <span class="field__label">E-mail</span>
+                        <input name="email" type="text" class="field__input" placeholder="your@email.com" autocomplete="email">
+                        <span class="field__error" aria-live="polite"></span>
+                    </label>
+                    <label class="field">
+                        <span class="field__label">Контактное лицо</span>
+                        <input name="name" type="text" class="field__input" placeholder="Ваше имя" autocomplete="name">
+                    </label>
+                    <label class="field field--wide">
+                        <span class="field__label">Сообщение</span>
+                        <textarea name="message" class="field__textarea" placeholder="Введите ваше сообщение..." rows="5"></textarea>
+                    </label>
+                    <label class="check contact-form__agree">
+                        <input type="checkbox" name="agree" checked>
+                        <span class="check__box"></span>
+                        <span class="check__text">Даю согласие на обработку данных</span>
+                    </label>
+                    <div class="contact-form__actions">
+                        <button type="submit" class="btn contact-form__btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="assets/clog/dglog.svg" alt="Алмазный мир" class="logo__img">
+                </a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-nav.svg" alt="" class="footer__icon">Навигация</div>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О компании</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-b2b.svg" alt="" class="footer__icon">B2B</div>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-production.svg" alt="" class="footer__icon">Производство</div>
+                    <a href="service-jewelry.html">Изготовление ювелирных изделий на заказ</a>
+                    <a href="service-rent.html">Аренда</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-control.svg" alt="" class="footer__icon">Государственный контроль</div>
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-market.svg" alt="" class="footer__icon">Торговая площадка</div>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-contacts.svg" alt="" class="footer__icon">Контакты</div>
+                    <a href="tel:+74959091261">+7 (495) 909-12-61</a>
+                    <a href="mailto:info@almaznymir.ru">info@almaznymir.ru</a>
+                    <a href="mailto:office@almazmir.ru">office@almazmir.ru</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-location.svg" alt="" class="footer__icon">Адрес</div>
+                    <address data-copy-text="125493, Россия, Москва, ул. Смольная, д. 12">125493, Россия, Москва,<br>ул. Смольная, д. 12</address>
+                </div>
+                <div class="footer__col footer__col-cta">
+                    <div class="footer__col-title">Будем рады работать с вами!</div>
+                    <a href="feedback.html" class="footer__cta-btn">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© МПО «КРИСТАЛЛ», 1970-1990</span>
+                <span>© АО «АЛМАЗНЫЙ МИР», 1990-2025</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алмазный мир</title>
+    <meta name="description" content="АО «Алмазный Мир» — международный инфраструктурный центр полного цикла работы с драгоценными металлами, камнями и ювелирными изделиями.">
+    <link rel="canonical" href="https://almaznymir.ru/">
+    <meta property="og:title" content="Алмазный Мир — инфраструктурный центр драгоценных металлов и камней">
+    <meta property="og:description" content="55 лет в отрасли. Государственный контроль, B2B‑решения, производство и торговая площадка на одной площадке.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://almaznymir.ru/">
+    <meta property="og:image" content="https://almaznymir.ru/assets/image/img18.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/clog/mglog.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <picture class="logo__picture">
+                    <source srcset="assets/clog/mglog.svg" media="(max-width: 1023px)">
+                    <img src="assets/clog/glog.svg" alt="Алмазный мир" class="logo__img">
+                </picture>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <div class="nav__item nav__item--services">
+                    <button class="nav__link nav__link--services" type="button">Услуги<span class="nav__arrow"></span></button>
+                    <div class="nav-dropdown nav-dropdown--accordion">
+                        <div class="nav-dropdown__item nav-dropdown__item--open">
+                            <button class="nav-dropdown__cat is-active" type="button" data-cat="control">Государственный контроль</button>
+                            <div class="nav-dropdown__panel" data-panel="control">
+                                <a href="service-hallmark.html">Организация клеймения</a>
+                                <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                                <a href="service-operator.html">Уполномоченный оператор</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="b2b">B2B</button>
+                            <div class="nav-dropdown__panel" data-panel="b2b">
+                                <a href="service-fulfillment.html">Фулфилмент</a>
+                                <a href="service-logistics.html">Логистика</a>
+                                <a href="service-customs.html">Таможенное оформление</a>
+                                <a href="service-storage.html">Хранение</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="production">Производство</button>
+                            <div class="nav-dropdown__panel" data-panel="production">
+                                <a href="service-jewelry.html">Изготовление на заказ</a>
+                                <a href="service-rent.html">Аренда помещений</a>
+                            </div>
+                        </div>
+                        <div class="nav-dropdown__item">
+                            <button class="nav-dropdown__cat" type="button" data-cat="trade">Торговое решение</button>
+                            <div class="nav-dropdown__panel" data-panel="trade">
+                                <a href="service-market.html">Торговая площадка</a>
+                                <a href="service-expo.html">Выставочные пространства</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="news.html">Новости</a>
+            </nav>
+            <a href="tel:+74957756271" class="header__phone">+7 (495) 775-62-71</a>
+            <a href="feedback.html" class="btn btn--header">Связаться с нами</a>
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <button class="mobile-menu__services-toggle" type="button">Услуги</button>
+                <div class="mobile-menu__services-list">
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Геммологическая экспертиза</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                    <a href="service-jewelry.html">Изготовление на заказ</a>
+                    <a href="service-rent.html">Аренда помещений</a>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <a href="news.html">Новости</a>
+                <a href="feedback.html">Связаться с нами</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero__inner">
+                <h1 class="hero__title"><span>55 лет</span> на рынке драгоценных<br>металлов и камней</h1>
+                <div class="hero-main reveal">
+                    <div class="hero-main__text">
+                        <h2 class="hero-main__title">Международный инфраструктурный центр «Алмазный Мир»</h2>
+                        <p class="hero-main__desc">АО «Алмазный Мир» — международный инфраструктурный центр полного цикла работы с драгоценными металлами, камнями и ювелирными изделиями. На одной площадке компания объединяет современные технологии, профессиональные службы и государственные лаборатории.</p>
+                        <a href="feedback.html" class="btn hero__cta">Связаться с нами</a>
+                    </div>
+                    <div class="hero-main__art">
+                        <img src="assets/image/img18.svg" alt="" class="hero__art-img" loading="lazy">
+                    </div>
+                </div>
+                <div class="hero-features">
+                    <a href="#services" class="hero-feature reveal">
+                        <div class="hero-feature__icon">
+                            <img src="assets/image/img3.svg" alt="" class="hero-card__icon-img" loading="lazy">
+                        </div>
+                        <div class="hero-feature__text">
+                            <h3 class="hero-feature__title">Пробирная палата РФ</h3>
+                            <p class="hero-feature__desc">Государственный контроль за пробой и клеймением изделий из драгоценных металлов</p>
+                        </div>
+                    </a>
+                    <a href="#services" class="hero-feature reveal">
+                        <div class="hero-feature__icon">
+                            <img src="assets/image/img1.svg" alt="" class="hero-card__icon-img" loading="lazy">
+                        </div>
+                        <div class="hero-feature__text">
+                            <h3 class="hero-feature__title">Гохран России</h3>
+                            <p class="hero-feature__desc">Операции с ценностями для государственных фондов и резервов РФ</p>
+                        </div>
+                    </a>
+                    <a href="#services" class="hero-feature reveal">
+                        <div class="hero-feature__icon">
+                            <img src="assets/image/img2.svg" alt="" class="hero-card__icon-img" loading="lazy">
+                        </div>
+                        <div class="hero-feature__text">
+                            <h3 class="hero-feature__title">Специализированный таможенный пост</h3>
+                            <p class="hero-feature__desc">Проведение таможенных операций и контроль экспорта и импорта</p>
+                        </div>
+                    </a>
+                    <a href="#services" class="hero-feature reveal">
+                        <div class="hero-feature__icon">
+                            <img src="assets/image/img4.svg" alt="" class="hero-card__icon-img" loading="lazy">
+                        </div>
+                        <div class="hero-feature__text">
+                            <h3 class="hero-feature__title">Геммологические лаборатории</h3>
+                            <p class="hero-feature__desc">Экспертиза и сертификация драгоценных камней и ювелирных изделий</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services reveal">
+            <div class="section__inner">
+                <div class="services__head">
+                    <h2 class="section__title">Направления работы</h2>
+                    <div class="services-tabs" role="tablist" aria-label="Категории услуг">
+                        <button class="services-tab is-active" type="button" data-cat="control" role="tab" aria-selected="true">Государственный контроль</button>
+                        <button class="services-tab" type="button" data-cat="b2b" role="tab" aria-selected="false">B2B</button>
+                        <button class="services-tab" type="button" data-cat="production" role="tab" aria-selected="false">Производство</button>
+                        <button class="services-tab" type="button" data-cat="trade" role="tab" aria-selected="false">Торговое решение</button>
+                    </div>
+                </div>
+
+                <div class="services-dots" data-services-dots aria-label="Позиция списка услуг"></div>
+                <div class="services-carousel" data-services-carousel>
+                    <button class="services-arrow services-arrow--left" type="button" aria-label="Назад">‹</button>
+                    <div class="services-viewport">
+                        <div class="services-track">
+                            <a href="service-hallmark.html" class="service-slide" data-cat="control">
+                                <div class="service-slide__media"><img src="assets/image/img6.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Организация клеймения</h3>
+                                    <p class="service-slide__desc">Клеймение ювелирных изделий Пробирной палатой РФ</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-gemology.html" class="service-slide" data-cat="control">
+                                <div class="service-slide__media"><img src="assets/image/img4.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Организация геммологической экспертизы</h3>
+                                    <p class="service-slide__desc">Экспертиза и сертификация драгоценных камней</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-operator.html" class="service-slide" data-cat="control">
+                                <div class="service-slide__media"><img src="assets/image/img24.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Уполномоченный оператор</h3>
+                                    <p class="service-slide__desc">Уполномоченный оператор указа № 667 от 22.09.2025</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+
+                            <a href="service-fulfillment.html" class="service-slide" data-cat="b2b">
+                                <div class="service-slide__media"><img src="assets/image/img13.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Фулфилмент</h3>
+                                    <p class="service-slide__desc">Оператор по выкупу сырьевых товаров</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-logistics.html" class="service-slide" data-cat="b2b">
+                                <div class="service-slide__media"><img src="assets/image/img12.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Логистика</h3>
+                                    <p class="service-slide__desc">Организация перевозок и сопровождение</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-customs.html" class="service-slide" data-cat="b2b">
+                                <div class="service-slide__media"><img src="assets/image/img22.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Таможенное оформление</h3>
+                                    <p class="service-slide__desc">Оформление экспортно-импортных операций</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-storage.html" class="service-slide" data-cat="b2b">
+                                <div class="service-slide__media"><img src="assets/image/img1.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Хранение</h3>
+                                    <p class="service-slide__desc">Безопасное хранение ценностей</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+
+                            <a href="service-jewelry.html" class="service-slide" data-cat="production">
+                                <div class="service-slide__media"><img src="assets/image/img18.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Изготовление на заказ</h3>
+                                    <p class="service-slide__desc">Изготовление ювелирных изделий на заказ</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-rent.html" class="service-slide" data-cat="production">
+                                <div class="service-slide__media"><img src="assets/image/img15.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Аренда</h3>
+                                    <p class="service-slide__desc">Аренда производственных и офисных помещений</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+
+                            <a href="service-market.html" class="service-slide" data-cat="trade">
+                                <div class="service-slide__media"><img src="assets/image/img14.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Торговая площадка</h3>
+                                    <p class="service-slide__desc">Сделки купли‑продажи на прозрачных условиях</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                            <a href="service-expo.html" class="service-slide" data-cat="trade">
+                                <div class="service-slide__media"><img src="assets/image/img28.svg" alt="" loading="lazy"></div>
+                                <div class="service-slide__body">
+                                    <h3 class="service-slide__title">Выставочные пространства</h3>
+                                    <p class="service-slide__desc">Демонстрация продукции и деловые мероприятия</p>
+                                    <span class="service-slide__more">Подробнее<img src="assets/icons/arrow-diag.svg" alt="" class="service-slide__more-icon"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="services-arrow services-arrow--right" type="button" aria-label="Вперёд">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits reveal">
+            <div class="section__inner">
+                <h2 class="section__title">Преимущества сотрудничества</h2>
+                <div class="benefits-grid">
+                    <article class="benefit benefit--infra">
+                        <div class="benefit__text">
+                            <h3 class="benefit__title">Государственная инфраструктура</h3>
+                            <p class="benefit__desc">На площадке действуют государственные лаборатории и профессиональные службы</p>
+                        </div>
+                        <div class="benefit__media benefit__media--temple">
+                            <img src="assets/image/img15.svg" alt="" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="benefit benefit--work">
+                        <div class="benefit__text">
+                            <h3 class="benefit__title">Работаем в отрасли <span class="benefit__accent">с 1970 года</span></h3>
+                            <p class="benefit__desc">Продолжая традиции завода Московский «Кристалл»</p>
+                        </div>
+                        <div class="benefit__media benefit__media--hand">
+                            <img src="assets/image/img14.svg" alt="" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="benefit benefit--small">
+                        <div class="benefit__icon"><img src="assets/image/img9.svg" alt="" loading="lazy"></div>
+                        <h3 class="benefit__title">Контроль качества</h3>
+                        <p class="benefit__desc">Все операции соответствуют отраслевым и государственным стандартам</p>
+                    </article>
+
+                    <article class="benefit benefit--small">
+                        <div class="benefit__icon"><img src="assets/image/img13.svg" alt="" loading="lazy"></div>
+                        <h3 class="benefit__title">Полный цикл услуг</h3>
+                        <p class="benefit__desc">Все процессы от приёма до экспорта — на одной площадке</p>
+                    </article>
+
+                    <article class="benefit benefit--small">
+                        <div class="benefit__icon"><img src="assets/image/img4.svg" alt="" loading="lazy"></div>
+                        <h3 class="benefit__title">Экспертная среда</h3>
+                        <p class="benefit__desc">На площадке действуют государственные лаборатории и профессиональные службы</p>
+                    </article>
+
+                    <article class="benefit benefit--small">
+                        <div class="benefit__icon"><img src="assets/image/img11.svg" alt="" loading="lazy"></div>
+                        <h3 class="benefit__title">Комплексная инфраструктура</h3>
+                        <p class="benefit__desc">Специализированные помещения, сервисные услуги и техническая поддержка</p>
+                    </article>
+
+                    <article class="benefit benefit--small">
+                        <div class="benefit__icon"><img src="assets/image/img17.svg" alt="" loading="lazy"></div>
+                        <h3 class="benefit__title">Современная логистика</h3>
+                        <p class="benefit__desc">Безопасная перевозка ценностей по России и за рубеж</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners reveal">
+            <div class="section__inner">
+                <h2 class="section__title">Партнёры</h2>
+                <div class="partners__list">
+                    <div class="partners__item">
+                        <img src="assets/logos/part1.svg" alt="Партнёр 1" class="partners__logo" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/logos/part2.svg" alt="Партнёр 2" class="partners__logo" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/logos/part3.svg" alt="Партнёр 3" class="partners__logo" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/logos/part4.svg" alt="Партнёр 4" class="partners__logo" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/logos/part5.png" alt="Партнёр 5" class="partners__logo" loading="lazy">
+                    </div>
+                    <div class="partners__item">
+                        <img src="assets/logos/part6.png" alt="Партнёр 6" class="partners__logo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news reveal">
+            <div class="section__inner">
+                <div class="news__head news__head--home">
+                    <div class="news__head-title">
+                        <h2 class="section__title">Новости</h2>
+                    </div>
+                    <a href="news.html" class="news__more-btn">Все новости</a>
+                </div>
+                <div class="news__grid reveal" data-news-list data-per-page="3" data-news-home></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="assets/clog/dglog.svg" alt="Алмазный мир" class="logo__img">
+                </a>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-nav.svg" alt="" class="footer__icon">Навигация</div>
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О компании</a>
+                    <a href="news.html">Новости</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-b2b.svg" alt="" class="footer__icon">B2B</div>
+                    <a href="service-fulfillment.html">Фулфилмент</a>
+                    <a href="service-logistics.html">Логистика</a>
+                    <a href="service-customs.html">Таможенное оформление</a>
+                    <a href="service-storage.html">Хранение</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-production.svg" alt="" class="footer__icon">Производство</div>
+                    <a href="service-jewelry.html">Изготовление ювелирных изделий на заказ</a>
+                    <a href="service-rent.html">Аренда</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-control.svg" alt="" class="footer__icon">Государственный контроль</div>
+                    <a href="service-hallmark.html">Организация клеймения</a>
+                    <a href="service-gemology.html">Организация геммологической экспертизы</a>
+                    <a href="service-operator.html">Уполномоченный оператор</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-market.svg" alt="" class="footer__icon">Торговая площадка</div>
+                    <a href="service-market.html">Торговая площадка</a>
+                    <a href="service-expo.html">Выставочные пространства</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-contacts.svg" alt="" class="footer__icon">Контакты</div>
+                    <a href="tel:+74959091261">+7 (495) 909-12-61</a>
+                    <a href="mailto:info@almaznymir.ru">info@almaznymir.ru</a>
+                    <a href="mailto:office@almazmir.ru">office@almazmir.ru</a>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__col-title"><img src="assets/icons/footer-location.svg" alt="" class="footer__icon">Адрес</div>
+                    <address data-copy-text="125493, Россия, Москва, ул. Смольная, д. 12">125493, Россия, Москва,<br>ул. Смольная, д. 12</address>
+                </div>
+                <div class="footer__col footer__col-cta">
+                    <div class="footer__col-title">Будем рады работать с вами!</div>
+                    <a href="feedback.html" class="footer__cta-btn">Связаться с нами</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© МПО «КРИСТАЛЛ», 1970-1990</span>
+                <span>© АО «АЛМАЗНЫЙ МИР», 1990-2025</span>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

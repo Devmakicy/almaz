@@ -193,9 +193,23 @@ a {
         top: 50%;
         transform: translateY(-50%);
         display: inline-flex;
+        width: 145px;
+        min-width: 145px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .logo {
         margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo__text {
+        display: none;
     }
 }
 
@@ -360,8 +374,8 @@ a {
     display: inline-block;
     width: 8px;
     height: 8px;
-    border-right: 2px solid var(--text-muted);
-    border-bottom: 2px solid var(--text-muted);
+    border-right: 1px solid var(--text-muted);
+    border-bottom: 1px solid var(--text-muted);
     transform: rotate(45deg);
     transition: transform 0.15s ease, border-color 0.15s ease;
 }
@@ -2213,10 +2227,24 @@ a {
     grid-area: work;
     display: grid;
     grid-template-columns: minmax(0,1.1fr) minmax(0,1fr);
-    align-items: center;
+    align-items: flex-end;
     gap: 16px;
     padding: 18px 24px 18px;
     overflow: hidden;
+    position: relative;
+}
+
+.benefit--infra {
+    align-items: flex-end;
+    position: relative;
+}
+
+.benefit--work .benefit__text,
+.benefit--infra .benefit__text {
+    align-self: end;
+    margin-top: auto;
+    z-index: 5;
+    position: relative;
 }
 
 .benefit--small:nth-of-type(3) { grid-area: quality; }
@@ -2229,12 +2257,23 @@ a {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
+    color: #0a1833;
 }
 
 .benefit__desc {
     font-size: 16px;
-    color: var(--text-muted);
+    color: #444f6f;
     line-height: 1.5;
+}
+
+.benefit--work .benefit__title,
+.benefit--infra .benefit__title {
+    color: #061031;
+}
+
+.benefit--work .benefit__desc,
+.benefit--infra .benefit__desc {
+    color: #2f3b59;
 }
 
 .benefit__accent { color: #5b6fff; }
@@ -2288,8 +2327,8 @@ a {
 }
 
 .benefit__media--hand img {
-    width: 380px;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     transform: translate(4%, 26%);
@@ -2353,6 +2392,12 @@ a {
         width: 100%;
         height: 96px;
     }
+
+    .partners__logo {
+        max-height: 48px;
+        height: auto;
+        width: auto;
+    }
 }
 
 .partners__item {
@@ -2366,14 +2411,16 @@ a {
     font-size: 14px;
     color: var(--text-muted);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
 }
 
 .partners__logo {
-    max-width: 150px;
+    max-width: 100%;
     max-height: 56px;
     width: auto;
     height: auto;
     display: block;
+    object-fit: contain;
 }
 
 .partners__item--empty {
@@ -4094,7 +4141,8 @@ a {
     }
 
     .benefit__media--hand img {
-        width: 300px;
+        width: 100%;
+        max-width: 100%;
         transform: translate(14%, 8%);
     }
 

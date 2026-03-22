@@ -302,6 +302,14 @@ function getCurrentService() {
 
 function highlightActiveService() {
     const current = getCurrentService();
+
+    // убрать активные состояния по умолчанию
+    document.querySelectorAll('.nav-dropdown__cat').forEach((cat) => cat.classList.remove('is-active'));
+    document.querySelectorAll('.nav-dropdown__item').forEach((item) => item.classList.remove('nav-dropdown__item--open'));
+    document.querySelectorAll('.nav-dropdown__panel').forEach((panel) => panel.classList.remove('is-open'));
+    document.querySelectorAll('.nav a').forEach((link) => link.classList.remove('nav__active'));
+    document.querySelectorAll('.mobile-menu__services-list a').forEach((link) => link.classList.remove('nav__active'));
+
     if (!current) return;
 
     // десктопный дропдаун
